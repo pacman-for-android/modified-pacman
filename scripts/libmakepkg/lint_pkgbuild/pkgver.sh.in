@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   pkgver.sh - Check the 'pkgver' variable conforms to requirements.
 #

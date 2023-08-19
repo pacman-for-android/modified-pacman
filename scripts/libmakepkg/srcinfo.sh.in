@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   srcinfo.sh - functions for writing .SRCINFO files
 #

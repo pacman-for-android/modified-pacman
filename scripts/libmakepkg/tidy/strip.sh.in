@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   strip.sh - Strip debugging symbols from binary files
 #
@@ -145,7 +145,7 @@ tidy_strip() {
 		[[ -z ${STRIP_STATIC+x} ]] && STRIP_STATIC="-S"
 
 		if check_option "debug" "y"; then
-			dbgdir="$pkgdirbase/$pkgbase-@DEBUGSUFFIX@/usr/lib/debug"
+			dbgdir="$pkgdirbase/$pkgbase-@DEBUGSUFFIX@/data/usr/lib/debug"
 			dbgsrcdir="${DBGSRCDIR:-/usr/src/debug}/${pkgbase}"
 			dbgsrc="$pkgdirbase/$pkgbase-@DEBUGSUFFIX@$dbgsrcdir"
 			mkdir -p "$dbgdir" "$dbgsrc"

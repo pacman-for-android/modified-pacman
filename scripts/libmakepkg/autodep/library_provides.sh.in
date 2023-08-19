@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   library_provides.sh - Automatically add a packages libraries to provides
 #

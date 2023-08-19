@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   reproducible.sh - utilities for improving package reproducibility
 #

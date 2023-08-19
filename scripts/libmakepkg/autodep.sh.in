@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   autodep.sh - functions for automatically adding depends/provides
 #

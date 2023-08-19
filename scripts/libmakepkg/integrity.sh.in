@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   integrity.sh - functions relating to source integrity checking
 #

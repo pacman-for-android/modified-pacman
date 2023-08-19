@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/data/usr/bin/perl
 #   makepkg-template - template system for makepkg
 #
 #   Copyright (c) 2013-2022 Pacman Development Team <pacman-dev@lists.archlinux.org>

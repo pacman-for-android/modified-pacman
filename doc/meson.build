@@ -103,7 +103,7 @@ foreach page: manpages + sitepages
 endforeach
 
 run_target('html',
-           command : ['/bin/true'],
+           command : ['/data/usr/bin/true'],
            depends : html_targets)
 
 custom_target(
@@ -114,11 +114,11 @@ custom_target(
   ] + html_files + [
     '-C', meson.current_source_dir(),
     'asciidoc-override.css',
-    '-C', '/etc/asciidoc/stylesheets/',
+    '-C', '/data/etc/asciidoc/stylesheets/',
     'asciidoc.css',
-    '-C', '/etc/asciidoc/javascripts/',
+    '-C', '/data/etc/asciidoc/javascripts/',
     'asciidoc.js',
-    '-C', '/etc/asciidoc/',
+    '-C', '/data/etc/asciidoc/',
     'images',
   ],
   output : ['website.tar.gz'],

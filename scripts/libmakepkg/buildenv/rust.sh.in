@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/data/usr/bin/bash
 #
 #   rust.sh - Specify flags for building a package with rust
 #

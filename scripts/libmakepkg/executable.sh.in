@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/usr/bin/bash
 #
 #   executable.sh - confirm presence of dependent executables
 #
