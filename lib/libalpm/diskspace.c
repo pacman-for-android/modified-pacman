@@ -102,11 +102,11 @@ static alpm_list_t *mount_point_list(alpm_handle_t *handle)
 	struct mntent *mnt;
 	FILE *fp;
 
-	fp = setmntent(MOUNTED, "r");
+	fp = setmntent("/proc/self/mounts", "r");
 
 	if(fp == NULL) {
 		_alpm_log(handle, ALPM_LOG_ERROR, _("could not open file: %s: %s\n"),
-				MOUNTED, strerror(errno));
+				"/proc/self/mounts", strerror(errno));
 		return NULL;
 	}
 
