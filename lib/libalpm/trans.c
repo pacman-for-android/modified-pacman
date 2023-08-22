@@ -358,13 +358,13 @@ int _alpm_runscriptlet(alpm_handle_t *handle, const char *filepath,
 	strcpy(arg1, "-c");
 
 	/* create a directory in $root/tmp/ for copying/extracting the scriptlet */
-	len = strlen(handle->root) + strlen("tmp/alpm_XXXXXX") + 1;
+	len = strlen(handle->root) + strlen("data/local/tmp/alpm_XXXXXX") + 1;
 	MALLOC(tmpdir, len, RET_ERR(handle, ALPM_ERR_MEMORY, -1));
-	snprintf(tmpdir, len, "%stmp/", handle->root);
+	snprintf(tmpdir, len, "%sdata/local/tmp/", handle->root);
 	if(access(tmpdir, F_OK) != 0) {
 		_alpm_makepath_mode(tmpdir, 01777);
 	}
-	snprintf(tmpdir, len, "%stmp/alpm_XXXXXX", handle->root);
+	snprintf(tmpdir, len, "%sdata/local/tmp/alpm_XXXXXX", handle->root);
 	if(mkdtemp(tmpdir) == NULL) {
 		_alpm_log(handle, ALPM_LOG_ERROR, _("could not create temp directory\n"));
 		free(tmpdir);
